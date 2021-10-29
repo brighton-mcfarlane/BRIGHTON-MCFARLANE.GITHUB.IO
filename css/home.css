@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Heebo";
+    src: url(/fonts/Heebo-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Print Clearly";
+    src: url(/fonts/PrintClearly.otf) format('opentype');
+}
+@font-face {
+    font-family: "Moon";
+    src: url(/fonts/Moon2.0-Regular.otf) format('opentype'); 
+}
+@font-face{
+    font-family: "Moon Thin";
+    src: url(/fonts/Moon2.0-Light.otf) format('opentype');
+}
+html {
+    background-color: #2c2f33;
+}
+.content-block {
+    margin-left: 6em;
+    margin-right:6em;
+}
+
+.navbar {
+    padding-top: 60px;
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    text-decoration: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3b3f44;
+    transition: 0.5s;
+}
+.navbar a {
+    background: linear-gradient(180deg,#fc98ff48,#8f00b3cc);
+    color: white;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: "Moon";
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 100ms;
+    height: auto;
+    width: auto;
+
+}
+.navbar a:hover {
+    transform: scale(1.08);
+}
+.navbar a.active {
+    box-shadow: 0rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.336);
+}
+
+.openbtn {
+    background: linear-gradient(180deg,#f653fc,#8600a7);
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    font-family: "Moon";
+    border-radius: 15px;
+    transition: transform 150ms;
+    margin-left: 0.5rem;
+    position:fixed;
+}
+
+.openbtn:hover {
+    transform: scale(1.08);
+}
+
+#main {
+    transition: margin-left 500ms;
+}
+
+
+
+.title-block {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: auto;
+    height: 0 auto;
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.title-block span {
+    font-family: "Moon";
+    font-size: 2em;
+    color: white;
+    text-align: center;
+
+}
+
+.title-block img {
+    align-content: center;
+    width: 15em;
+    height: auto;
+}
+
+.home-content h1 {
+    font-family: "Moon";
+    font-size: 3rem;
+    color: white;
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+.home-content p {
+    margin: 1.5rem;
+    font-family: "Moon Thin";
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    letter-spacing: .02rem; 
+}
+
+@media only screen and (max-device-width: 480px) {
+    .navbar {padding-top: 2rem;}
+    .navbar a {font-size: 2em; margin-bottom: 2rem; margin-top: 2rem; padding-top:2rem; padding-bottom: 2rem; border: 3rem; height: 3rem; }
+    .openbtn {font-size: 4em; }
+    .title-block img {width: 15em; height: auto;}
+}
